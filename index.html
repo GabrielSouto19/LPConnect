@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect | Agência de Marketing</title>
+  <meta name="description" content="Connect – estratégia, criatividade e resultados que transformam marcas." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="Logo 2 branca.svg" alt="Connect Agência de Marketing" class="logo-img" />
+      </a>
+      <nav class="nav-desktop">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cases">Cases</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#blog">Blog</a>
+      </nav>
+      <a href="#contato" class="btn btn-primary nav-cta">Falar com a equipe</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="#servicos" class="nav-mobile-link">Serviços</a>
+      <a href="#sobre" class="nav-mobile-link">Sobre</a>
+      <a href="#cases" class="nav-mobile-link">Cases</a>
+      <a href="#equipe" class="nav-mobile-link">Equipe</a>
+      <a href="#blog" class="nav-mobile-link">Blog</a>
+      <a href="#contato" class="btn btn-primary" style="margin-top:1rem;">Falar com a equipe</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">CONNECT</div>
+    <div class="container hero-content">
+      <div class="hero-badge">Agência de Marketing Full Service</div>
+      <h1 class="hero-title">
+        Marcas que<br />
+        <span class="highlight">conectam.</span><br />
+        Resultados que<br />
+        <span class="highlight">transformam.</span>
+      </h1>
+      <p class="hero-sub">
+        Estratégia, criatividade e performance em um só lugar.<br />
+        Sua marca crescendo com inteligência.
+      </p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-primary btn-lg">Começar agora</a>
+        <a href="#cases" class="btn btn-outline btn-lg">Ver nossos cases</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">180<span class="stat-plus">+</span></span>
+          <span class="stat-label">Clientes atendidos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">R$42<span class="stat-plus">M</span></span>
+          <span class="stat-label">Em investimentos gerenciados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">98<span class="stat-plus">%</span></span>
+          <span class="stat-label">Taxa de satisfação</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">8<span class="stat-plus">+</span></span>
+          <span class="stat-label">Anos de mercado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTES LOGOS ===== -->
+  <section class="clients-section">
+    <div class="container">
+      <p class="clients-label">Empresas que confiam na Connect</p>
+      <div class="clients-track-wrapper">
+        <div class="clients-track">
+          <div class="client-logo">Marca A</div>
+          <div class="client-logo">Marca B</div>
+          <div class="client-logo">Marca C</div>
+          <div class="client-logo">Marca D</div>
+          <div class="client-logo">Marca E</div>
+          <div class="client-logo">Marca F</div>
+          <div class="client-logo">Marca G</div>
+          <div class="client-logo">Marca H</div>
+          <!-- duplicated for infinite scroll -->
+          <div class="client-logo">Marca A</div>
+          <div class="client-logo">Marca B</div>
+          <div class="client-logo">Marca C</div>
+          <div class="client-logo">Marca D</div>
+          <div class="client-logo">Marca E</div>
+          <div class="client-logo">Marca F</div>
+          <div class="client-logo">Marca G</div>
+          <div class="client-logo">Marca H</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FILOSOFIA ===== -->
+  <section class="philosophy">
+    <div class="container">
+      <p class="philosophy-text">
+        Não somos só uma agência.<br />
+        Somos <em>parceiros estratégicos</em> que vivem o crescimento da sua marca como se fosse o nosso.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Serviços que<br /><span class="highlight">impulsionam</span> marcas</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-index="01">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M16 24l5 5 11-11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Estratégia Digital</h3>
+          <p>Planejamento completo para posicionar sua marca no digital com foco em crescimento sustentável e ROI.</p>
+          <a href="#contato" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card" data-index="02">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 36l10-14 8 8 6-8 8 14H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="34" cy="14" r="4" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Tráfego Pago</h3>
+          <p>Gestão de campanhas no Google Ads, Meta Ads, TikTok Ads e outras plataformas para maximizar resultados.</p>
+          <a href="#contato" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card" data-index="03">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M8 20h32" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="2" fill="currentColor"/><circle cx="24" cy="16" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>Criação & Design</h3>
+          <p>Identidade visual, materiais gráficos, motion design e produção de conteúdo criativo de alto impacto.</p>
+          <a href="#contato" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card" data-index="04">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M12 36V24m8 12V20m8 16V16m8 20V12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>SEO & Conteúdo</h3>
+          <p>Otimização para mecanismos de busca e produção de conteúdo estratégico para atrair e converter.</p>
+          <a href="#contato" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card" data-index="05">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8z" stroke="currentColor" stroke-width="2"/><path d="M24 16v8l5 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Social Media</h3>
+          <p>Gestão completa das redes sociais com estratégia de conteúdo, engajamento e crescimento de audiência.</p>
+          <a href="#contato" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card" data-index="06">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 14h28M10 24h20M10 34h24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>CRM & Automação</h3>
+          <p>Implementação de CRM, automação de marketing e fluxos de nutrição para aumentar retenção e vendas.</p>
+          <a href="#contato" class="service-link">Saiba mais →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="about" id="sobre">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card about-card-main">
+          <div class="about-card-inner">
+            <span class="about-number">8+</span>
+            <span class="about-label">Anos conectando<br />marcas e pessoas</span>
+          </div>
+        </div>
+        <div class="about-card about-card-accent">
+          <div class="about-card-inner">
+            <span class="about-number">30+</span>
+            <span class="about-label">Profissionais<br />especializados</span>
+          </div>
+        </div>
+        <div class="about-bg-shape"></div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Quem somos</span>
+        <h2 class="section-title">Uma agência feita para <span class="highlight">resultados reais</span></h2>
+        <p>A Connect nasceu com um propósito claro: unir estratégia inteligente, criatividade sem limites e tecnologia de ponta para transformar marcas em referências de mercado.</p>
+        <p>Trabalhamos com empresas de todos os tamanhos, do empreendedor que está começando ao grupo empresarial que quer escalar. Nossa equipe multidisciplinar garante soluções completas, personalizadas e orientadas a resultados.</p>
+        <ul class="about-list">
+          <li>
+            <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Metodologia orientada a dados e performance
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Equipe especialista em cada canal e plataforma
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Relatórios transparentes com foco em ROI
+          </li>
+          <li>
+            <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Atendimento dedicado e estratégico
+          </li>
+        </ul>
+        <a href="#contato" class="btn btn-primary">Conhecer mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASES ===== -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nosso portfólio</span>
+        <h2 class="section-title">Cases que<br /><span class="highlight">falam por si</span></h2>
+      </div>
+      <div class="cases-grid">
+
+        <article class="case-card case-card-large">
+          <div class="case-image case-image-1">
+            <div class="case-overlay">
+              <span class="case-tag">E-commerce</span>
+              <h3>Marca Moda +340% em receita com tráfego pago e email marketing</h3>
+              <a href="#" class="case-link">Ver case →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image case-image-2">
+            <div class="case-overlay">
+              <span class="case-tag">SaaS</span>
+              <h3>Startup B2B alcança 5.000 leads qualificados em 90 dias</h3>
+              <a href="#" class="case-link">Ver case →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image case-image-3">
+            <div class="case-overlay">
+              <span class="case-tag">Serviços</span>
+              <h3>Clínica médica triplica agendamentos via Google Ads e SEO</h3>
+              <a href="#" class="case-link">Ver case →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image case-image-4">
+            <div class="case-overlay">
+              <span class="case-tag">Varejo</span>
+              <h3>Rede de franquias consolida branding digital em todo o Brasil</h3>
+              <a href="#" class="case-link">Ver case →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="#contato" class="btn btn-outline btn-lg">Ver todos os cases</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que nossos clientes <span class="highlight">dizem</span></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"A Connect transformou completamente nossa presença digital. Em 6 meses triplicamos o faturamento online. A equipe é extremamente dedicada e estratégica."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RL</div>
+            <div>
+              <strong>Ricardo Lima</strong>
+              <span>CEO – Grupo Expansão</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Finalmente uma agência que entende de negócio, não só de marketing. As campanhas deles geraram um ROI de 8x em menos de 4 meses. Recomendo sem hesitar."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AM</div>
+            <div>
+              <strong>Ana Martins</strong>
+              <span>Diretora de Marketing – Inova Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Profissionalismo e criatividade em cada entrega. A Connect redesenhou nossa identidade e criou uma estratégia de conteúdo que realmente engaja nosso público."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">FS</div>
+            <div>
+              <strong>Felipe Souza</strong>
+              <span>Fundador – Studio Forme</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPE ===== -->
+  <section class="team" id="equipe">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa equipe</span>
+        <h2 class="section-title">As pessoas por trás dos <span class="highlight">resultados</span></h2>
+      </div>
+      <div class="team-grid team-grid-3">
+
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="marcos.jpeg" alt="Marcos" />
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h4>Marcos</h4>
+            <span>Fundador & CEO</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="pablo.jpeg" alt="Pablo" />
+            <div class="team-social"><a href="#" aria-label="LinkedIn">in</a></div>
+          </div>
+          <div class="team-info">
+            <h4>Pablo</h4>
+            <span>Diretor de Estratégia</span>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="gabriel.png" alt="Gabriel" />
+            <div class="team-social"><a href="#" aria-label="LinkedIn">in</a></div>
+          </div>
+          <div class="team-info">
+            <h4>Gabriel</h4>
+            <span>Diretor de Arte</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Blog & Conteúdo</span>
+        <h2 class="section-title">Insights para<br /><span class="highlight">crescer mais</span></h2>
+      </div>
+      <div class="blog-grid">
+
+        <article class="blog-card blog-card-featured">
+          <div class="blog-image blog-image-1">
+            <span class="blog-tag-cat">Tráfego Pago</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">15 Mai 2026</span>
+            <h3>Como escalar campanhas no Meta Ads sem perder eficiência em 2026</h3>
+            <p>Descubra as estratégias que usamos para escalar investimentos sem deixar o CPA sair do controle.</p>
+            <a href="#" class="blog-read">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image blog-image-2">
+            <span class="blog-tag-cat">SEO</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">08 Mai 2026</span>
+            <h3>SEO com IA: o que mudou e como se adaptar agora</h3>
+            <p>A inteligência artificial está reescrevendo as regras do Google. Saiba como se posicionar.</p>
+            <a href="#" class="blog-read">Ler artigo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image blog-image-3">
+            <span class="blog-tag-cat">Branding</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">01 Mai 2026</span>
+            <h3>Branding que vende: como construir marca e gerar conversão ao mesmo tempo</h3>
+            <p>Marca forte não é só estética. Veja como alinhar identidade e performance.</p>
+            <a href="#" class="blog-read">Ler artigo →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-content">
+        <h2>Pronto para <span class="highlight">conectar</span> sua marca ao próximo nível?</h2>
+        <p>Faça um diagnóstico gratuito com nossa equipe e descubra as oportunidades que você ainda não está aproveitando.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#contato" class="btn btn-primary btn-lg">Diagnóstico gratuito</a>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-outline btn-lg">Falar pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contact" id="contato">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">Vamos conversar</span>
+        <h2 class="section-title">Inicie sua <span class="highlight">transformação</span> digital</h2>
+        <p>Preencha o formulário ou nos chame direto no WhatsApp. Nossa equipe responde em até 2 horas.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>São Paulo, SP – Brasil</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63 19.79 19.79 0 013 .18 2 2 0 015 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>(11) 99999-9999</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>contato@connectagencia.com.br</span>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 11v5M8 8v.5M12 16v-5m0 0c0-1.5 4-1.5 4 0v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><polygon points="10,9 10,15 15,12" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" />
+          </div>
+          <div class="form-group">
+            <label for="service">Serviço de interesse</label>
+            <select id="service" name="service">
+              <option value="">Selecione um serviço</option>
+              <option>Estratégia Digital</option>
+              <option>Tráfego Pago</option>
+              <option>Criação & Design</option>
+              <option>SEO & Conteúdo</option>
+              <option>Social Media</option>
+              <option>CRM & Automação</option>
+              <option>Pacote completo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Conte um pouco sobre seu negócio e seus objetivos..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+          <p class="form-disclaimer">Seus dados estão seguros. Não enviamos spam.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="Logo 2 branca.svg" alt="Connect Agência de Marketing" class="logo-img" />
+        </a>
+        <p>Estratégia, criatividade e performance para marcas que querem crescer de verdade.</p>
+        <div class="contact-social" style="margin-top:1.5rem;">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 11v5M8 8v.5M12 16v-5m0 0c0-1.5 4-1.5 4 0v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><polygon points="10,9 10,15 15,12" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h5>Serviços</h5>
+        <a href="#servicos">Estratégia Digital</a>
+        <a href="#servicos">Tráfego Pago</a>
+        <a href="#servicos">Criação & Design</a>
+        <a href="#servicos">SEO & Conteúdo</a>
+        <a href="#servicos">Social Media</a>
+        <a href="#servicos">CRM & Automação</a>
+      </div>
+      <div class="footer-nav">
+        <h5>Empresa</h5>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#cases">Cases</a>
+        <a href="#blog">Blog</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-nav">
+        <h5>Contato</h5>
+        <a href="https://wa.me/5500000000000" target="_blank">WhatsApp</a>
+        <a href="mailto:contato@connectagencia.com.br">E-mail</a>
+        <span>São Paulo, SP – Brasil</span>
+        <span style="margin-top:.5rem;display:block;">Seg–Sex, 9h às 18h</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Connect Agência de Marketing. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/5500000000000" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M22.5 19.5c-.3-.15-1.8-.9-2.1-1-.3-.1-.5-.15-.7.15-.2.3-.8 1-.95 1.2-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.37-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.7-1.68-.96-2.3-.25-.6-.5-.52-.7-.53h-.6c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.26.48 1.7.62.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35z" fill="white"/></svg>
+  </a>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
