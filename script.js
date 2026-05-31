@@ -1,14 +1,16 @@
 /* ============================================
-   CONNECT – Script
+   CONNECT — Script (Tron Edition)
    ============================================ */
 
 // ---- HEADER SCROLL ----
 const header = document.getElementById('header');
-const onScroll = () => {
-  header.classList.toggle('scrolled', window.scrollY > 40);
-  document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
-};
-window.addEventListener('scroll', onScroll, { passive: true });
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  header.classList.toggle('scrolled', y > 60);
+  backToTop.classList.toggle('visible', y > 500);
+}, { passive: true });
 
 // ---- MOBILE NAV ----
 const hamburger = document.getElementById('hamburger');
@@ -20,94 +22,72 @@ hamburger.addEventListener('click', () => {
   document.body.style.overflow = open ? 'hidden' : '';
 });
 
-document.querySelectorAll('.nav-mobile-link, .nav-mobile .btn').forEach(link => {
-  link.addEventListener('click', () => {
+document.querySelectorAll('.nav-mobile-link, .nav-mobile .btn').forEach(el => {
+  el.addEventListener('click', () => {
     navMobile.classList.remove('open');
     hamburger.classList.remove('active');
     document.body.style.overflow = '';
   });
 });
 
-// ---- SMOOTH SCROLL FOR NAV ----
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+// ---- SMOOTH SCROLL ----
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      const offset = 80;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
+    if (!target) return;
+    e.preventDefault();
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
   });
 });
 
 // ---- BACK TO TOP ----
-document.getElementById('backToTop').addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
 // ---- SCROLL REVEAL ----
-const revealElements = document.querySelectorAll(
-  '.service-card, .case-card, .testimonial-card, .team-card, .blog-card, .stat-item, .philosophy-text, .contact-item'
+const revealEls = document.querySelectorAll(
+  '.service-card, .case-card, .testimonial-card, .team-card, .blog-card, .pitch-stat, .about-card, .contact-item'
 );
 
-revealElements.forEach((el, i) => {
-  el.classList.add('reveal');
-  el.classList.add(`reveal-delay-${(i % 5) + 1}`);
+revealEls.forEach((el, i) => {
+  el.classList.add('reveal', `reveal-delay-${(i % 5) + 1}`);
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+}, { threshold: 0.1 });
 
-revealElements.forEach(el => observer.observe(el));
+revealEls.forEach(el => revealObserver.observe(el));
 
-// Also reveal section headers
-document.querySelectorAll('.section-header, .about-content, .about-visual, .contact-info, .contact-form-wrapper, .cta-content, .cta-actions').forEach(el => {
+// Also reveal section blocks
+document.querySelectorAll('.pitch-inner, .section-header, .about-content, .about-visual, .philosophy-inner, .cta-content, .cta-actions, .contact-info, .contact-form-wrapper').forEach(el => {
   el.classList.add('reveal');
-  observer.observe(el);
+  revealObserver.observe(el);
 });
 
 // ---- COUNTER ANIMATION ----
-const counters = document.querySelectorAll('.stat-number');
+document.querySelectorAll('.pstat-num').forEach(el => {
+  const suffix = el.querySelector('.pstat-plus')?.textContent || '';
+  const rawText = el.childNodes[0]?.textContent || '';
+  const num = parseFloat(rawText.replace(/[^0-9.]/g, ''));
+  const prefix = rawText.replace(/[0-9.]/g, '');
+  if (isNaN(num)) return;
 
-const animateCounter = (el) => {
-  const text = el.textContent;
-  const suffix = el.querySelector('.stat-plus')?.textContent || '';
-  const prefix = text.replace(/[0-9.,+%M]/g, '').replace(suffix, '');
-  const rawNum = parseFloat(text.replace(/[^0-9.]/g, ''));
-  if (isNaN(rawNum)) return;
+  const observer = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting) return;
+    observer.disconnect();
+    const start = performance.now();
+    const duration = 1600;
+    const tick = now => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.childNodes[0].textContent = prefix + Math.round(num * eased);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, { threshold: 0.5 });
 
-  const duration = 1800;
-  const start = performance.now();
-
-  const update = (now) => {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = (rawNum * eased).toFixed(rawNum % 1 !== 0 ? 0 : 0);
-    el.childNodes[0].textContent = prefix + current;
-    if (progress < 1) requestAnimationFrame(update);
-  };
-
-  requestAnimationFrame(update);
-};
-
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter(entry.target);
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
-
-counters.forEach(el => counterObserver.observe(el));
+  observer.observe(el);
+});
 
 // ---- FORM SUBMIT ----
 const form = document.getElementById('contact-form');
@@ -117,10 +97,9 @@ if (form) {
     const btn = this.querySelector('button[type="submit"]');
     btn.textContent = 'Enviando...';
     btn.disabled = true;
-
     setTimeout(() => {
-      btn.textContent = 'Mensagem enviada! ✓';
-      btn.style.background = '#22c55e';
+      btn.textContent = 'Mensagem enviada ✓';
+      btn.style.background = '#00FF88';
       this.reset();
       setTimeout(() => {
         btn.textContent = 'Enviar mensagem';
@@ -131,36 +110,60 @@ if (form) {
   });
 }
 
-// ---- ACTIVE NAV LINK ON SCROLL ----
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-desktop a');
-
-const activeNavObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.style.color = link.getAttribute('href') === `#${entry.target.id}` ? 'var(--text)' : '';
-      });
-    }
-  });
-}, { threshold: 0.4 });
-
-sections.forEach(section => activeNavObserver.observe(section));
-
-// ---- CURSOR GLOW (desktop only) ----
+// ---- TRON CURSOR TRAIL (desktop only) ----
 if (window.matchMedia('(pointer: fine)').matches) {
+  const trail = document.createElement('div');
+  trail.style.cssText = `
+    position: fixed; pointer-events: none; z-index: 9999;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #00D4FF;
+    box-shadow: 0 0 10px #00D4FF, 0 0 20px rgba(0,212,255,0.5);
+    transform: translate(-50%, -50%);
+    transition: left 0.08s linear, top 0.08s linear;
+    mix-blend-mode: screen;
+  `;
+  document.body.appendChild(trail);
+
   const glow = document.createElement('div');
   glow.style.cssText = `
-    position: fixed; pointer-events: none; z-index: 9999;
-    width: 400px; height: 400px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,69,0,0.06) 0%, transparent 70%);
+    position: fixed; pointer-events: none; z-index: 9998;
+    width: 320px; height: 320px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,212,255,0.04) 0%, transparent 70%);
     transform: translate(-50%, -50%);
-    transition: left 0.12s ease, top 0.12s ease;
+    transition: left 0.2s ease, top 0.2s ease;
   `;
   document.body.appendChild(glow);
 
   document.addEventListener('mousemove', e => {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top = e.clientY + 'px';
+    trail.style.left = e.clientX + 'px';
+    trail.style.top  = e.clientY + 'px';
+    glow.style.left  = e.clientX + 'px';
+    glow.style.top   = e.clientY + 'px';
   });
 }
+
+// ---- ACTIVE NAV HIGHLIGHT ----
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-desktop a');
+
+new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === `#${entry.target.id}` ? 'var(--cyan)' : '';
+      });
+    }
+  });
+}, { threshold: 0.4 }).observe(document.querySelector('#pitch') || document.body);
+
+sections.forEach(s => {
+  new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => {
+          a.style.color = a.getAttribute('href') === `#${entry.target.id}` ? 'var(--cyan)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 }).observe(s);
+});

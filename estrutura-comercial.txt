@@ -1,0 +1,533 @@
+================================================================================
+  CONNECT AGÊNCIA DE MARKETING
+  ESTRUTURA COMERCIAL & PADRÃO DE AQUISIÇÃO DE CLIENTES
+================================================================================
+
+Versão 1.0 | 2026
+Uso interno – equipe comercial
+
+________________________________________________________________________________
+
+ÍNDICE
+
+  1. ESTRUTURA COMERCIAL
+     1.1 Organograma do time comercial
+     1.2 Funções e responsabilidades
+     1.3 Metas e métricas (KPIs)
+     1.4 Ferramentas e CRM
+     1.5 Política de comissionamento
+
+  2. PADRÃO DE AQUISIÇÃO DE CLIENTES
+     2.1 Perfil de cliente ideal (ICP)
+     2.2 Canais de aquisição
+     2.3 Funil de vendas
+     2.4 Processo de qualificação (SPIN/BANT)
+     2.5 Cadência de abordagem
+     2.6 Scripts de abordagem
+     2.7 Gestão de objeções
+     2.8 Proposta comercial
+     2.9 Follow-up e fechamento
+
+  3. ONBOARDING DE NOVOS CLIENTES
+
+  4. RÉGUA DE RELACIONAMENTO PÓS-VENDA
+
+________________________________________________________________________________
+
+
+================================================================================
+  1. ESTRUTURA COMERCIAL
+================================================================================
+
+--------------------------------------------------------------------------------
+1.1 ORGANOGRAMA DO TIME COMERCIAL
+--------------------------------------------------------------------------------
+
+  [Diretor Comercial / Sócio]
+         |
+  [Coordenador de Vendas]
+         |
+    _____|______________________
+    |                          |
+[SDR / Hunter]          [Closer / Account Executive]
+(prospecção ativa)       (fechamento e negociação)
+         |
+  [CS – Customer Success]
+  (pós-venda e retenção)
+
+
+--------------------------------------------------------------------------------
+1.2 FUNÇÕES E RESPONSABILIDADES
+--------------------------------------------------------------------------------
+
+DIRETOR COMERCIAL
+  - Definir metas e estratégia de crescimento
+  - Aprovar propostas acima de R$ 5.000/mês
+  - Acompanhar pipeline semanalmente
+  - Negociar contratos corporativos e parcerias
+
+COORDENADOR DE VENDAS
+  - Gerenciar rotina diária do time
+  - Garantir cumprimento da cadência de prospecção
+  - Fazer reuniões de alinhamento semanais
+  - Reportar resultados à diretoria
+
+SDR (Sales Development Representative) / HUNTER
+  - Prospectar leads via outbound (LinkedIn, cold e-mail, cold call)
+  - Qualificar leads inbound gerados pelo marketing
+  - Agendar reuniões de diagnóstico para o Closer
+  - Meta: 15 reuniões agendadas por mês por SDR
+
+CLOSER / ACCOUNT EXECUTIVE
+  - Conduzir reuniões de diagnóstico e apresentação de proposta
+  - Negociar contratos e fechar vendas
+  - Fazer handoff para o CS após o fechamento
+  - Meta: taxa de fechamento mínima de 30% das reuniões
+
+CUSTOMER SUCCESS (CS)
+  - Receber o cliente no onboarding
+  - Garantir entrega e satisfação nos primeiros 90 dias
+  - Identificar oportunidades de upsell e cross-sell
+  - Reduzir churn e aumentar LTV
+
+
+--------------------------------------------------------------------------------
+1.3 METAS E MÉTRICAS (KPIs)
+--------------------------------------------------------------------------------
+
+  TOPO DE FUNIL
+  - Leads gerados por mês (inbound + outbound): meta 80
+  - Taxa de qualificação de leads: meta ≥ 40%
+  - Reuniões de diagnóstico agendadas/mês: meta 20
+
+  MEIO DE FUNIL
+  - Propostas enviadas/mês: meta 15
+  - Tempo médio de envio da proposta após reunião: máx. 48h
+  - Taxa de avanço reunião → proposta: meta ≥ 75%
+
+  FUNDO DE FUNIL
+  - Taxa de fechamento (proposta → contrato): meta ≥ 30%
+  - Ticket médio mensal (MRR por cliente): meta R$ 3.500
+  - Novos contratos fechados/mês: meta 5
+  - MRR adicionado por mês: meta R$ 17.500
+
+  RETENÇÃO
+  - Churn mensal: máx. 5%
+  - NPS (Net Promoter Score): meta ≥ 70
+  - Taxa de upsell nos primeiros 6 meses: meta 25%
+
+
+--------------------------------------------------------------------------------
+1.4 FERRAMENTAS E CRM
+--------------------------------------------------------------------------------
+
+  CRM PRINCIPAL
+  - Ferramenta sugerida: HubSpot (gratuito/starter) ou RD Station CRM
+  - Todo lead deve ser cadastrado no CRM no mesmo dia do primeiro contato
+  - Status obrigatórios no pipeline:
+      [ ] Lead novo
+      [ ] Em qualificação
+      [ ] Reunião agendada
+      [ ] Proposta enviada
+      [ ] Em negociação
+      [ ] Fechado – ganho
+      [ ] Fechado – perdido (registrar motivo obrigatoriamente)
+
+  COMUNICAÇÃO INTERNA
+  - Slack ou WhatsApp Business (canais separados por área)
+  - Reunião de pipeline: toda segunda-feira, 9h, 30 min
+
+  PROSPECÇÃO OUTBOUND
+  - LinkedIn Sales Navigator (para mapeamento de decisores)
+  - Apollo.io ou Hunter.io (para busca de e-mails)
+  - Planilha de controle de cadência (enquanto sem automação)
+
+  PROPOSTAS
+  - Modelo padrão em PDF (identidade visual da Connect)
+  - Ferramenta: Canva Pro, Better Proposals ou Notion
+  - Toda proposta deve ter: escopo, entregáveis, prazo, investimento e garantia
+
+
+--------------------------------------------------------------------------------
+1.5 POLÍTICA DE COMISSIONAMENTO
+--------------------------------------------------------------------------------
+
+  SDR
+  - R$ 50 por reunião realizada (show) com lead qualificado
+  - Bônus de R$ 200 ao bater a meta mensal de reuniões (15+)
+
+  CLOSER
+  - 5% do MRR do primeiro contrato fechado
+  - Pago no mês em que o cliente efetua o primeiro pagamento
+  - Bônus de R$ 500 ao fechar 3+ contratos no mês
+  - Comissão recorrente de 1% enquanto o cliente permanecer ativo (a combinar)
+
+  REGRAS GERAIS
+  - Comissão válida somente após recebimento do cliente
+  - Estorno proporcional em caso de cancelamento no primeiro mês
+  - Comissões pagas até o 5º dia útil do mês seguinte
+
+
+________________________________________________________________________________
+
+
+================================================================================
+  2. PADRÃO DE AQUISIÇÃO DE CLIENTES
+================================================================================
+
+--------------------------------------------------------------------------------
+2.1 PERFIL DE CLIENTE IDEAL (ICP – Ideal Customer Profile)
+--------------------------------------------------------------------------------
+
+  SEGMENTO-ALVO PRIMÁRIO
+  - Empresas de médio porte (faturamento entre R$ 500k e R$ 10M/ano)
+  - Segmentos: saúde, educação, varejo, serviços B2B, e-commerce, imobiliário
+  - Localização: qualquer região do Brasil (atendimento remoto)
+  - Decisor: Sócio, CEO, Diretor de Marketing ou Gerente Comercial
+
+  SINAIS DE MATURIDADE IDEAL
+  - Já investe (ou quer investir) em marketing digital
+  - Tem produto/serviço validado no mercado
+  - Está em fase de escala ou deseja aumentar o faturamento
+  - Não possui equipe interna de marketing estruturada
+
+  PERFIL DE CLIENTE NÃO IDEAL (evitar)
+  - Negócios sem capital de giro mínimo para investir em mídia
+  - Empreendedores que querem controlar tudo sem delegar
+  - Clientes de ticket muito baixo (abaixo de R$ 1.500/mês)
+  - Segmentos com restrições legais de publicidade sem suporte jurídico
+
+
+--------------------------------------------------------------------------------
+2.2 CANAIS DE AQUISIÇÃO
+--------------------------------------------------------------------------------
+
+  INBOUND (o marketing atrai o cliente)
+  - Redes sociais da Connect (Instagram, LinkedIn)
+  - Conteúdo educativo: posts, reels, artigos no blog
+  - Google Ads: campanhas para termos como "agência de marketing [cidade]"
+  - SEO: posicionamento orgânico para buscas de serviços
+  - Indicações (referral): programa de indicação com benefício para clientes ativos
+
+  OUTBOUND (o time vai até o cliente)
+  - LinkedIn: conexão com decisores + mensagem personalizada
+  - Cold e-mail: sequência automatizada segmentada por nicho
+  - Cold call: ligação após o e-mail (2º ou 3º toque da cadência)
+  - Parcerias: contadores, consultorias, agências complementares
+
+  PRIORIDADE SUGERIDA (início)
+  1. Indicações de clientes ativos (custo zero, alta conversão)
+  2. LinkedIn outbound (alta personalização)
+  3. Instagram/conteúdo (construção de autoridade)
+  4. Cold e-mail (escala)
+
+
+--------------------------------------------------------------------------------
+2.3 FUNIL DE VENDAS
+--------------------------------------------------------------------------------
+
+  TOPO – ATRAÇÃO
+  ┌─────────────────────────────────────────────────────┐
+  │  Lead chega via: inbound, outbound, indicação       │
+  │  Ação: cadastro no CRM + qualificação inicial       │
+  └─────────────────────────────────────────────────────┘
+                          ↓
+  MEIO – CONSIDERAÇÃO
+  ┌─────────────────────────────────────────────────────┐
+  │  Reunião de diagnóstico (30-45 min)                 │
+  │  Entende o negócio, desafios e objetivos do cliente │
+  │  Apresenta cases e abordagem da Connect             │
+  └─────────────────────────────────────────────────────┘
+                          ↓
+  FUNDO – DECISÃO
+  ┌─────────────────────────────────────────────────────┐
+  │  Proposta comercial personalizada (em 48h)          │
+  │  Follow-up ativo até a decisão                      │
+  │  Negociação e assinatura do contrato                │
+  └─────────────────────────────────────────────────────┘
+                          ↓
+  PÓS-VENDA – RETENÇÃO
+  ┌─────────────────────────────────────────────────────┐
+  │  Onboarding estruturado (primeiros 30 dias)         │
+  │  Relatório mensal de resultados                     │
+  │  Reunião mensal de alinhamento                      │
+  └─────────────────────────────────────────────────────┘
+
+
+--------------------------------------------------------------------------------
+2.4 QUALIFICAÇÃO DE LEADS – MÉTODO SPIN + BANT
+--------------------------------------------------------------------------------
+
+  BANT (critérios de qualificação rápida)
+  ┌───────────────┬──────────────────────────────────────────────────────┐
+  │ Budget        │ Tem orçamento disponível para marketing? (≥ R$2k/mês)│
+  │ Authority     │ Estou falando com quem decide ou influencia?         │
+  │ Need          │ Tem um problema real que a Connect pode resolver?    │
+  │ Timeline      │ Quando pretende iniciar? (urgência do projeto)       │
+  └───────────────┴──────────────────────────────────────────────────────┘
+
+  SPIN (para aprofundar na reunião de diagnóstico)
+  S – Situação:   "Como está estruturado seu marketing hoje?"
+  P – Problema:   "Qual é seu maior desafio para crescer no digital?"
+  I – Implicação: "O que acontece se esse problema não for resolvido?"
+  N – Necessidade:"O que você precisa para resolver isso de vez?"
+
+
+--------------------------------------------------------------------------------
+2.5 CADÊNCIA DE ABORDAGEM OUTBOUND
+--------------------------------------------------------------------------------
+
+  DIA 1  │ [LinkedIn] Solicitação de conexão com nota personalizada
+  DIA 2  │ [LinkedIn] Mensagem de abertura (sem pitch, gerar curiosidade)
+  DIA 4  │ [E-mail]   E-mail 1 – apresentação + case relevante ao segmento
+  DIA 6  │ [LinkedIn] Comentar conteúdo do lead ou enviar insight do setor
+  DIA 8  │ [E-mail]   E-mail 2 – e-mail de valor (artigo, dado, tendência)
+  DIA 11 │ [Telefone] Ligação de follow-up referenciando os contatos anteriores
+  DIA 14 │ [E-mail]   E-mail 3 – último toque ("break-up e-mail")
+
+  Se não houver resposta após os 7 toques: marcar como "nurturing"
+  e incluir em automação de conteúdo (newsletter, redes sociais).
+
+  ► Se houver resposta em qualquer ponto: mover para agendamento da reunião.
+
+
+--------------------------------------------------------------------------------
+2.6 SCRIPTS DE ABORDAGEM
+--------------------------------------------------------------------------------
+
+  ── LINKEDIN – MENSAGEM DE ABERTURA ──────────────────────────────────────────
+
+  "Olá, [Nome]! Vi que você atua no setor de [segmento] e trabalha com
+  [produto/serviço]. Tenho acompanhado o mercado e percebo que empresas como
+  a [Empresa] têm um enorme potencial para crescer no digital.
+
+  Trabalho na Connect, agência de marketing especializada em [segmento/resultado
+  específico]. Recentemente ajudamos [case similar] a [resultado concreto].
+
+  Posso te mostrar em 20 minutos como poderíamos fazer algo parecido para vocês?"
+
+  ── COLD E-MAIL 1 – ABERTURA ─────────────────────────────────────────────────
+
+  Assunto: [Nome da empresa] + [resultado específico]?
+
+  "Olá, [Nome],
+
+  Notei que a [Empresa] atua em [segmento] e queria compartilhar um resultado
+  que tivemos com um cliente parecido com vocês:
+
+  → [Case: empresa do mesmo segmento] + [resultado em número] em [prazo].
+
+  Acredito que conseguiríamos replicar algo semelhante para a [Empresa].
+
+  Teria 20 minutos essa semana para eu mostrar como fizemos isso?
+
+  Abraço,
+  [Nome] | Connect Agência de Marketing"
+
+  ── COLD E-MAIL 3 – BREAK-UP ─────────────────────────────────────────────────
+
+  Assunto: Devo parar de entrar em contato?
+
+  "Olá, [Nome],
+
+  Tentei entrar em contato algumas vezes, mas entendo que o momento pode não
+  ser o ideal agora.
+
+  Vou pausar os contatos por aqui. Se em algum momento fizer sentido conversar
+  sobre como aumentar os resultados digitais da [Empresa], é só me chamar.
+
+  Boa sorte nos próximos meses!
+
+  [Nome] | Connect"
+
+  ── LIGAÇÃO – ABERTURA (30 seg) ──────────────────────────────────────────────
+
+  "Oi, [Nome], tudo bem? Aqui é [Seu Nome] da Connect, agência de marketing.
+  Te mandei um e-mail essa semana, não sei se chegou. Tenho um case do setor
+  de [segmento] que acredito que pode ser bem relevante pra vocês.
+  Você tem 2 minutinhos agora ou prefere eu te ligar amanhã num horário melhor?"
+
+
+--------------------------------------------------------------------------------
+2.7 GESTÃO DE OBJEÇÕES
+--------------------------------------------------------------------------------
+
+  OBJEÇÃO: "Já tenho agência"
+  → "Ótimo! E como estão os resultados atuais? Pergunto porque trabalhamos
+     com vários clientes que tinham agência e viram uma diferença significativa
+     ao comparar a nossa abordagem. Vale a pena 20 minutos pra ver se tem
+     espaço para melhorar."
+
+  OBJEÇÃO: "Não tenho orçamento agora"
+  → "Entendo. Quando faz mais sentido retomar essa conversa? Posso te enviar
+     enquanto isso um conteúdo sobre como calcular o ROI de marketing para
+     você levar a discussão internamente com mais embasamento."
+
+  OBJEÇÃO: "Preciso pensar / falar com meu sócio"
+  → "Claro, faz sentido! O que falta para vocês tomarem essa decisão? Posso
+     preparar uma apresentação específica para você mostrar ao seu sócio,
+     com os números projetados para o caso de vocês."
+
+  OBJEÇÃO: "Está caro"
+  → "Entendo a preocupação com investimento. Posso te mostrar como chegamos
+     nesse valor e qual retorno projetamos? A maioria dos nossos clientes
+     recupera o investimento nos primeiros 60-90 dias."
+
+  OBJEÇÃO: "Já tentei marketing e não funcionou"
+  → "Isso é mais comum do que parece. O que aconteceu na época? Quero
+     entender porque normalmente quando não funciona é estratégia, execução
+     ou acompanhamento. A gente pode fazer um diagnóstico rápido pra ver
+     onde travou."
+
+
+--------------------------------------------------------------------------------
+2.8 PROPOSTA COMERCIAL – ESTRUTURA PADRÃO
+--------------------------------------------------------------------------------
+
+  CAPA
+  - Logo Connect + logo do cliente
+  - Título: "Proposta Comercial – [Nome da Empresa]"
+  - Data e validade (máx. 10 dias)
+
+  1. DIAGNÓSTICO (personalizado)
+     - Resumo do que foi levantado na reunião
+     - Principais desafios identificados
+     - Oportunidades mapeadas
+
+  2. SOLUÇÃO PROPOSTA
+     - Serviços incluídos (detalhamento de escopo)
+     - O que está FORA do escopo (evita mal-entendido)
+     - Cronograma de entrega (30/60/90 dias)
+
+  3. CASES RELEVANTES
+     - 1 ou 2 cases do mesmo segmento ou desafio similar
+     - Resultado em números
+
+  4. INVESTIMENTO
+     - Valor mensal de gestão (honorários)
+     - Valor sugerido de verba para mídia paga (se aplicável)
+     - Forma de pagamento e vencimento
+     - Política de reajuste (anual, IPCA ou IGPM)
+
+  5. PRÓXIMOS PASSOS
+     - "Aprovando até [data], iniciamos em [data]"
+     - Forma de assinar (DocuSign, WhatsApp ou e-mail)
+
+  REGRAS DA PROPOSTA
+  - Nunca enviar sem ter feito a reunião de diagnóstico
+  - Prazo máximo de envio: 48h após a reunião
+  - Ligar (não só mensagem) para apresentar a proposta sempre que possível
+  - Personalizar ao máximo – nunca enviar proposta genérica
+
+
+--------------------------------------------------------------------------------
+2.9 FOLLOW-UP E FECHAMENTO
+--------------------------------------------------------------------------------
+
+  APÓS ENVIO DA PROPOSTA
+
+  Dia 0   → Envia a proposta + liga para agendar apresentação
+  Dia 1   → Apresenta a proposta (call ou presencial)
+  Dia 3   → WhatsApp: "Ficou alguma dúvida sobre a proposta?"
+  Dia 5   → E-mail com um insight/case adicional relacionado ao negócio
+  Dia 8   → Ligação: entender se há objeções pendentes
+  Dia 12  → WhatsApp final: "A proposta tem validade até [data]. Posso ajustar algo?"
+  Dia 15+ → Mover para nurturing se não houver resposta
+
+  SINAIS DE COMPRA (quando fechar logo)
+  - "Quando podemos começar?"
+  - "Quais são as formas de pagamento?"
+  - "Pode me mandar o contrato?"
+  - Pergunta sobre detalhes operacionais (acesso a contas, login, etc.)
+
+  AO RECEBER O "SIM"
+  1. Confirmar por escrito (WhatsApp ou e-mail)
+  2. Enviar contrato em até 24h (DocuSign ou PDF)
+  3. Emitir boleto/NF do setup ou primeiro mês
+  4. Passar para o CS iniciar onboarding
+
+
+________________________________________________________________________________
+
+
+================================================================================
+  3. ONBOARDING DE NOVOS CLIENTES
+================================================================================
+
+  SEMANA 1 – KICK-OFF
+  ☐ Reunião de boas-vindas (Closer + CS + cliente)
+  ☐ Apresentação do time que vai atender a conta
+  ☐ Levantamento de acessos: redes sociais, Google Ads, Analytics, site
+  ☐ Briefing completo: marca, tom de voz, público, concorrentes
+  ☐ Definição de metas do primeiro trimestre
+  ☐ Envio do checklist de onboarding ao cliente
+
+  SEMANA 2 – PLANEJAMENTO
+  ☐ Auditoria dos canais atuais do cliente
+  ☐ Apresentação do plano de 90 dias
+  ☐ Aprovação do calendário editorial (se Social Media incluso)
+  ☐ Configuração e integração de ferramentas (CRM, Analytics, Pixel)
+
+  SEMANA 3-4 – EXECUÇÃO INICIAL
+  ☐ Primeiras campanhas / publicações no ar
+  ☐ Alinhamento rápido (15 min) para ajustes
+  ☐ Relatório parcial da primeira quinzena
+
+  DIA 30 – REVISÃO DO PRIMEIRO MÊS
+  ☐ Reunião de resultado com o cliente
+  ☐ NPS do onboarding
+  ☐ Ajuste de estratégia se necessário
+  ☐ Identificar oportunidade de upsell
+
+
+________________________________________________________________________________
+
+
+================================================================================
+  4. RÉGUA DE RELACIONAMENTO PÓS-VENDA
+================================================================================
+
+  MENSAL (obrigatório para todos os clientes)
+  - Relatório de resultados enviado até o 5º dia útil
+  - Reunião de alinhamento mensal (30-60 min)
+  - Sugestão de melhoria ou nova ação estratégica
+
+  TRIMESTRAL
+  - Revisão completa de estratégia
+  - Apresentação de oportunidades de upsell/cross-sell
+  - Pesquisa de NPS interna
+
+  SEMESTRAL
+  - Reunião de planejamento de longo prazo
+  - Revisão de contrato e ticket (possibilidade de ajuste)
+
+  DATAS ESPECIAIS (personalização de relacionamento)
+  - Aniversário da empresa do cliente
+  - Aniversário de 1 ano de contrato com a Connect
+  - Resultados excepcionais (parabenizar com print/destaque)
+
+  PROGRAMA DE INDICAÇÃO
+  - Cliente indica um novo cliente → recebe 1 mês de desconto ou bônus em serviço
+  - Divulgar o programa na reunião do 2º mês (cliente já viu resultado)
+  - Registrar todas as indicações no CRM
+
+
+________________________________________________________________________________
+
+================================================================================
+  OBSERVAÇÕES FINAIS
+================================================================================
+
+  - Este documento deve ser revisado a cada 6 meses ou quando houver mudança
+    significativa de estratégia comercial.
+
+  - Toda a equipe comercial deve ser treinada nesta metodologia antes de
+    iniciar a prospecção.
+
+  - Scripts são base – incentive o time a personalizar mantendo a estrutura.
+
+  - Registrar TUDO no CRM. Pipeline sem dados é pipeline inútil.
+
+================================================================================
+  Connect Agência de Marketing | Documento Interno | v1.0 | 2026
+================================================================================
